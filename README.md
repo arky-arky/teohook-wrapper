@@ -1,6 +1,6 @@
 # teohook-wrapper
 
-##a teohook scripting wrapper
+### teohook scripting wrapper
 
 ## How to use
 To use this, you must copy all of the code from the `wrapper.lua` file and put it at the top of your file.
