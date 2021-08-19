@@ -39,5 +39,5 @@ hit(0,0)
 #### params: (int x, int y)
 ```lua
 -- This will place dirt at 15,15
-place(0,0,15)
+place(15,15,2)
 ```
