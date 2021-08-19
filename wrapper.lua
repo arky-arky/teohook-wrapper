@@ -1,5 +1,6 @@
 -- Teohook wrapper v0.1 made by [arky#0086]
 -- License: MIT
+-- Contributors: [teocodes]
 removeHooks() -- to prevent crashes, probably removing when 2.0 th
 local nopulldialog = false
 
