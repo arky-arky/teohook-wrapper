@@ -13,7 +13,7 @@ function hit(x, y)
     pkt.int_y = y
     pkt.pos_x = getLocal().pos.x
     pkt.pos_y = getLocal().pos.y
-    sleep(100)
+    sleep(150)
     sendPacketRaw(false, pkt)
 end
 
@@ -25,13 +25,13 @@ function place(x, y, id)
     pkt.int_y = y
     pkt.pos_x = getLocal().pos.x
     pkt.pos_y = getLocal().pos.y
-    sleep(100)
+    sleep(150)
     sendPacketRaw(false, pkt)
 end
 
 function pull(name)
     for _,player in pairs(getPlayers()) do
-        if player.name:find(name) then -- if player name contains string pull that player
+        if player.name:lower():find(name:lower()) then -- if player name contains string pull that player
             nopulldialog = true
             sendPacket(false, "action|dialog_return\ndialog_name|popup\nnetID|"..tostring(player.netid).."|\nnetID|"..tostring(player.netid).."|\nbuttonClicked|pull",2)
             sleep(170)
